@@ -40,6 +40,9 @@
 <link href="{{ .RelPermalink }}" rel="alternate" type="application/json" title="{{ $.Site.Title }}" />
 {{ end }}
 
+<!-- Plausible -->
+<script defer data-domain="blog.azazelm3dj3d.com" src="https://plausible.io/js/script.js"></script>
+
 <!-- Google Analytics -->
 {{ if eq (getenv "HUGO_ENV") "production"}}
 {{ with .Site.GoogleAnalytics }}
